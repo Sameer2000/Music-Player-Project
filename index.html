@@ -1,0 +1,768 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="Width=device-width, initial-scale=1">
+  <title>Bolt Musify</title>
+  <link rel="stylesheet" href="homepage.css">
+  <link rel="stylesheet" media="responsive-homepage.css">
+  <script src="https://kit.fontawesome.com/6766d78bed.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <!-- logo -->
+      <div class="logo d-flex-row flex-ai-center flex-jc-se">
+        <a href="#">
+          <img src="static\Logo.jpg" alt="logo">
+        </a>
+        <a href="#">
+          <div id="website-title">
+            <h2>BOLT</h2>
+            <h3>MUSIFY</h3>
+          </div>
+        </a>
+
+
+
+
+      </div>
+      <div id="nav-fav">
+        <a href="#">Favourites</a>
+      </div>
+      <!-- A search bar that can be used anywhere if the height isn't changed -->
+      <div class="search-bar">
+        <label for="nav-search"><i class="search-icon fa-solid fa-magnifying-glass"></i></label>
+        <input type="text" name="nav-search" id="nav-search" placeholder="search">
+        <label for="nav-search"><i class="microphone-icon fas fa-microphone"></i></label>
+      </div>
+
+      <div class="notification-bell">
+        <i class="fa-solid fa-bell"></i>
+      </div>
+
+      <div class="profile-pic">
+        <img src="static\profile.jpg" alt="">
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- main section is a flexbox with 2 sections -->
+
+    <!-- content section -->
+    <section id="content">
+
+      <!-- carousel -->
+      <section id="album-carousel">
+
+        <!-- The position of images is set to Relative so that we can make use of the z-index for stacking images  -->
+        <img src="static\carousel\hero2.jpg" alt="">
+        <img src="static\carousel\hero.jpg" alt="">
+        <img src="static\carousel\hero3.jpg" alt="">
+
+      </section>
+
+      <!-- Latest release  -->
+      <section id="latest-release">
+
+        <h3 class="heading-big">Latest Release</h3>
+
+        <!-- Classes for display: flex & flex wrap are used  -->
+        <div id="latest-container" class="d-flex-row d-flex-wrap flex-jc-sb">
+
+          <!-- Each song is enclosed within a song-conatainer  -->
+          <div class="song-container d-flex-row flex-jc-sb">
+
+            <!-- This element contains song's image, name, release date  -->
+            <div class="img-name-date-box d-flex-row">
+              <div class="overlay-play">
+                <img src="static\songs\yaosobi.jpg" alt="">
+                <a href="#"><i class="far fa-play-circle"></i></a>
+              </div>
+
+              <div class="song-name-date">
+                <h6 class="heading-small">Comedy</h6>
+                <h6 class="light-text">AUG 15, 2019</h6>
+              </div>
+            </div>
+
+            <!-- Song's interval & 3-dots for drop-down menu  -->
+            <div class="dots-time">
+              <a href="#0"><i class="fas fa-ellipsis-h"></i></a>
+              <h6 class="light-text">2:35</h6>
+            </div>
+          </div>
+
+          <div class="song-container d-flex-row flex-jc-sb">
+            <div class="img-name-date-box d-flex-row">
+              <div class="overlay-play">
+                <img src="static\songs\yaosobi.jpg" alt="">
+                <a href="#"><i class="far fa-play-circle"></i></a>
+              </div>
+
+              <div class="song-name-date">
+                <h6 class="heading-small">Comedy</h6>
+                <h6 class="light-text">AUG 15, 2019</h6>
+              </div>
+            </div>
+
+            <div class="dots-time">
+              <a href="#0"><i class="fas fa-ellipsis-h"></i></a>
+              <h6 class="light-text">2:35</h6>
+            </div>
+          </div>
+
+          <div class="song-container d-flex-row flex-jc-sb">
+            <div class="img-name-date-box d-flex-row">
+              <div class="overlay-play">
+                <img src="static\songs\yaosobi.jpg" alt="">
+                <a href="#"><i class="far fa-play-circle"></i></a>
+              </div>
+
+              <div class="song-name-date">
+                <h6 class="heading-small">Comedy</h6>
+                <h6 class="light-text">AUG 15, 2019</h6>
+              </div>
+            </div>
+
+            <div class="dots-time">
+              <a href="#0"><i class="fas fa-ellipsis-h"></i></a>
+              <h6 class="light-text">2:35</h6>
+            </div>
+          </div>
+
+          <div class="song-container d-flex-row flex-jc-sb">
+            <div class="img-name-date-box d-flex-row">
+              <div class="overlay-play">
+                <img src="static\songs\yaosobi.jpg" alt="">
+                <a href="#"><i class="far fa-play-circle"></i></a>
+              </div>
+
+              <div class="song-name-date">
+                <h6 class="heading-small">Comedy</h6>
+                <h6 class="light-text">AUG 15, 2019</h6>
+              </div>
+            </div>
+
+            <div class="dots-time">
+              <a href="#0"><i class="fas fa-ellipsis-h"></i></a>
+              <h6 class="light-text">2:35</h6>
+            </div>
+          </div>
+
+        </div>
+
+      </section>
+
+      <!-- Popular Artists -->
+      <section id="popular-artists">
+
+        <h3 class="heading-big">Popular Artists</h3>
+
+        <div class="artists-container d-flex-row flex-jc-se">
+
+          <!-- This element has the Artist's Image & their name  -->
+          <div class="artist-img-name text-align-c">
+            <a href="single-artist-playlist.html"><img src="static\artists\bruno.jpg" alt=""></a>
+            <h5 class="heading-small">Bruno Mars</h5>
+          </div>
+
+          <div class="artist-img-name text-align-c">
+            <a href="single-artist-playlist.html"><img src="static\artists\charlie.jpg" alt=""></a>
+            <h5 class="heading-small">Charlie Puth</h5>
+          </div>
+
+          <div class="artist-img-name text-align-c">
+            <a href="single-artist-playlist.html"><img src="static\artists\coldplay2.jpg" alt=""></a>
+            <h5 class="heading-small">Coldplay</h5>
+          </div>
+
+          <div class="artist-img-name text-align-c">
+            <a href="single-artist-playlist.html"><img src="static\artists\ed.jpg" alt=""></a>
+            <h5 class="heading-small">Ed Sheeran</h5>
+          </div>
+
+          <div class="artist-img-name text-align-c">
+            <a href="single-artist-playlist.html"><img src="static\artists\id.jpg" alt=""></a>
+            <h5 class="heading-small">Imagine Dragons</h5>
+          </div>
+
+          <div class="artist-img-name text-align-c">
+            <a href="single-artist-playlist.html"><img src="static\artists\zayn2.jpg" alt=""></a>
+            <h5 class="heading-small">Zayn Malik</h5>
+          </div>
+
+        </div>
+
+      </section>
+
+      <!-- Music Stations -->
+      <section id="music-stations" class="d-flex-row flex-ai-center flex-jc-sa">
+
+        <div id="stations-outer">
+          <div id="stations-mid"></div>
+          <div id="stations-inner">
+            <div class="stations-logo d-flex-col flex-ai-center">
+              <img src="static\Logo.jpg" alt="">
+              <h3>Stations</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="stations-genre d-flex-row flex-ai-center flex-jc-center">
+          <h3>Love</h3>
+        </div>
+        <div class="stations-genre d-flex-row flex-ai-center flex-jc-center">
+          <h3>Retro</h3>
+        </div>
+        <div class="stations-genre d-flex-row flex-ai-center flex-jc-center">
+          <h3>Chill</h3>
+        </div>
+        <div class="stations-genre d-flex-row flex-ai-center flex-jc-center">
+          <h3>Workout</h3>
+        </div>
+        <div class="stations-genre d-flex-row flex-ai-center flex-jc-center">
+          <h3>Rock</h3>
+        </div>
+        <div class="stations-genre d-flex-row flex-ai-center flex-jc-center">
+          <h3>Pop</h3>
+        </div>
+
+      </section>
+
+      <!-- Music mood -->
+      <section id="music-mood" class="d-flex-row flex-jc-sb">
+
+        <div class="mood-outer">
+          <div class="mood-inner d-flex-row flex-jc-center flex-ai-center">
+            <a href="#">
+              <p name="pp">Party</p>
+            </a>
+          </div>
+        </div>
+
+        <div class="mood-outer">
+          <div class="mood-inner d-flex-row flex-jc-center flex-ai-center">
+            <a href="#">
+              <p name="pp">Electronic</p>
+            </a>
+          </div>
+        </div>
+
+        <div class="mood-outer">
+          <div class="mood-inner d-flex-row flex-jc-center flex-ai-center">
+            <a href="#">
+              <p name="pp">Road Trips</p>
+            </a>
+          </div>
+        </div>
+
+      </section>
+
+      <!-- latest english -->
+      <section id="latest-english">
+
+        <h3 class="heading-big">Latest English</h3>
+
+        <div class="language-songs-container d-flex-row flex-jc-sb d-flex-wrap">
+
+          <div class="song-img-name">
+            <div class="overlay-play">
+              <img src="static\songs\dreamland.jpg" alt="">
+              <a href="#"><i class="far fa-play-circle"></i></a>
+            </div>
+            <div class="song-name-date">
+              <h6 class="heading-small">Dreamland</h6>
+              <h6 class="light-text">JUNE 15, 2019</h6>
+            </div>
+          </div>
+          <div class="song-img-name">
+            <div class="overlay-play">
+              <img src="static\songs\comedy.jpg" alt="">
+              <a href="#"><i class="far fa-play-circle"></i></a>
+            </div>
+            <div class="song-name-date">
+              <h6 class="heading-small">Comedy</h6>
+              <h6 class="light-text">JUNE 15, 2019</h6>
+            </div>
+          </div>
+          <div class="song-img-name">
+            <div class="overlay-play">
+              <img src="static\songs\yaosobi.jpg" alt="">
+              <a href="#"><i class="far fa-play-circle"></i></a>
+            </div>
+            <div class="song-name-date">
+              <h6 class="heading-small">Yaosobi</h6>
+              <h6 class="light-text">JUNE 15, 2019</h6>
+            </div>
+          </div>
+          <div class="song-img-name">
+            <div class="overlay-play">
+              <img src="static\songs\la-espada.jpg" alt="">
+              <a href="#"><i class="far fa-play-circle"></i></a>
+            </div>
+            <div class="song-name-date">
+              <h6 class="heading-small">La Espada</h6>
+              <h6 class="light-text">JUNE 4, 2020</h6>
+            </div>
+          </div>
+          <div class="song-img-name">
+            <div class="overlay-play">
+              <img src="static\songs\sparkle.jpg" alt="">
+              <a href="#"><i class="far fa-play-circle"></i></a>
+            </div>
+            <div class="song-name-date">
+              <h6 class="heading-small">Sparkle</h6>
+              <h6 class="light-text">JAN 30, 2021</h6>
+            </div>
+          </div>
+          <div class="song-img-name">
+            <div class="overlay-play">
+              <img src="static\songs\eden.jpg" alt="">
+              <a href="#"><i class="far fa-play-circle"></i></a>
+            </div>
+            <div class="song-name-date">
+              <h6 class="heading-small">Eden</h6>
+              <h6 class="light-text">DEC 15, 2021</h6>
+            </div>
+          </div>
+
+        </div>
+
+      </section>
+
+      <!-- latest hindi -->
+      <section id="latest-hindi">
+
+        <h3 class="heading-big">Latest Hindi</h3>
+
+        <div class="language-songs-container d-flex-row flex-jc-sb d-flex-wrap">
+
+          <div class="song-img-name">
+            <div class="overlay-play">
+              <img src="static\songs\channd-baaliyan.jpg" alt="">
+              <a href="#"><i class="far fa-play-circle"></i></a>
+            </div>
+            <div class="song-name-date">
+              <h6 class="heading-small">Chaand Baaliyan</h6>
+              <h6 class="light-text">JUNE 15, 2019</h6>
+            </div>
+          </div>
+          <div class="song-img-name">
+            <div class="overlay-play">
+              <img src="static\songs\srivalli.jpg" alt="">
+              <a href="#"><i class="far fa-play-circle"></i></a>
+            </div>
+            <div class="song-name-date">
+              <h6 class="heading-small">Srivalli</h6>
+              <h6 class="light-text">JUNE 15, 2019</h6>
+            </div>
+          </div>
+          <div class="song-img-name">
+            <div class="overlay-play">
+              <img src="static\songs\de-tali.jpg" alt="">
+              <a href="#"><i class="far fa-play-circle"></i></a>
+            </div>
+            <div class="song-name-date">
+              <h6 class="heading-small">De Taali</h6>
+              <h6 class="light-text">JAN 30, 2021</h6>
+            </div>
+          </div>
+          <div class="song-img-name">
+            <div class="overlay-play">
+              <img src="static\songs\main-ki-karaan.jpg" alt="">
+              <a href="#"><i class="far fa-play-circle"></i></a>
+            </div>
+            <div class="song-name-date">
+              <h6 class="heading-small">Main Ki Karaan</h6>
+              <h6 class="light-text">JUNE 4, 2020</h6>
+            </div>
+          </div>
+          <div class="song-img-name">
+            <div class="overlay-play">
+              <img src="static\songs\meri-jaan.jpg" alt="">
+              <a href="#"><i class="far fa-play-circle"></i></a>
+            </div>
+            <div class="song-name-date">
+              <h6 class="heading-small">Meri Jaan</h6>
+              <h6 class="light-text">JAN 30, 2021</h6>
+            </div>
+          </div>
+          <div class="song-img-name">
+            <div class="overlay-play">
+              <img src="static\songs\srivalli.jpg" alt="">
+              <a href="#"><i class="far fa-play-circle"></i></a>
+            </div>
+            <div class="song-name-date">
+              <h6 class="heading-small">Srivalli</h6>
+              <h6 class="light-text">JUNE 15, 2019</h6>
+            </div>
+          </div>
+
+        </div>
+
+      </section>
+    </section>
+
+    <!-- Aside Section -->
+    <section id="aside">
+      <aside>
+        <!-- this is the section heading part. the heading will be static -->
+        <div class="heading-aside">
+          <h1 class="heading-big">Queue</h1>
+          <h5 class="heading-small">
+            <a href="#queue-option-box">Queue <i class="fas fa-chevron-circle-down"></i></a>
+          </h5>
+        </div>
+        <!-- this is the queue box which will be shown when the user clicks on the Queue button -->
+        <!-- it will have 3 options, playlists, favourite songs and Close button. it will close when one clicks on the close button. -->
+        <div class="queue-options" id="queue-option-box">
+          <p><a href class="heading-small">Playlists</a></p>
+          <hr>
+          <p><a href class="heading-small">Favourite songs</a></p>
+          <hr>
+          <p><a href="#" class="heading-small" style="color:rgb(248, 126, 126);">Close</a></p>
+        </div>
+        <!-- this is the content of the playlist. it will be dynamic. -->
+        <div class="playlist-content">
+          <!-- first playlist item -->
+          <div class=playlist-item>
+            <div class="left-content">
+              <!-- index -->
+              <div class="light-text" style="margin-right:4px;">
+                01
+              </div>
+              <div class="overlay-play">
+                <!-- overlay-play is for those images, which when hovered -->
+                <!-- Show a black backgroud with opacity less than 1 -->
+                <!-- And a play button icon within an Anchor tag -->
+                <!-- This class needs to be adjusted for width:100% % height:auto for some sections -->
+                <img src="static\songs\comedy.jpg" alt="">
+                <a href=""><i class="fas fa-play"></i></a>
+              </div>
+              <!-- name and author of the song -->
+              <div>
+                <h5 class="heading-small">
+                  Comedy
+                </h5>
+                <p class="light-text">
+                  Gen Hoshino
+                </p>
+              </div>
+            </div>
+            <!-- like button -->
+            <div class="right-content">
+              <i class="far fa-heart"></i>
+            </div>
+          </div>
+          <!-- second playlist item -->
+          <div class=playlist-item>
+            <div class="left-content">
+              <div class="light-text" style="margin-right:4px;">
+                02
+              </div>
+              <div class="overlay-play">
+                <img src="static\songs\dreamland.jpg" alt="">
+                <a href=""><i class="fas fa-play"></i></a>
+              </div>
+              <div>
+                <h5 class="heading-small">
+                  Dreamland
+                </h5>
+                <p class="light-text">
+                  Glass Animals
+                </p>
+              </div>
+            </div>
+            <div class="right-content">
+              <i class="far fa-heart"></i>
+            </div>
+          </div>
+          <!-- third playlist item -->
+          <div class=playlist-item>
+            <div class="left-content">
+              <div class="light-text" style="margin-right:4px;">
+                03
+              </div>
+              <div class="overlay-play">
+                <img src="static\songs\eden.jpg" alt="">
+                <a href=""><i class="fas fa-play"></i></a>
+              </div>
+              <div>
+                <h5 class="heading-small">
+                  Eden
+                </h5>
+                <p class="light-text">
+                  Monkey Majik
+                </p>
+              </div>
+            </div>
+            <div class="right-content">
+              <i class="far fa-heart"></i>
+            </div>
+          </div>
+          <!-- fourth playlist item -->
+          <div class=playlist-item>
+            <div class="left-content">
+              <div class="light-text" style="margin-right:4px;">
+                04
+              </div>
+              <div class="overlay-play">
+                <img src="static\songs\la-espada.jpg" alt="">
+                <a href=""><i class="fas fa-play"></i></a>
+              </div>
+              <div>
+                <h5 class="heading-small">
+                  La Espada
+                </h5>
+                <p class="light-text">
+                  Eternal Raijin
+                </p>
+              </div>
+            </div>
+            <div class="right-content">
+              <i class="far fa-heart"></i>
+            </div>
+          </div>
+          <!-- fifth playlist item -->
+          <div class=playlist-item>
+            <div class="left-content">
+              <div class="light-text" style="margin-right:4px;">
+                05
+              </div>
+              <div class="overlay-play">
+                <img src="static\songs\orange.jpg" alt="">
+                <a href=""><i class="fas fa-play"></i></a>
+              </div>
+              <div>
+                <h5 class="heading-small">
+                  Orange
+                </h5>
+                <p class="light-text">
+                  7!!
+                </p>
+              </div>
+            </div>
+            <div class="right-content">
+              <i class="far fa-heart"></i>
+            </div>
+          </div>
+          <!-- sixth playlist item -->
+          <div class=playlist-item>
+            <div class="left-content">
+              <div class="light-text" style="margin-right:4px;">
+                06
+              </div>
+              <div class="overlay-play">
+                <img src="static\songs\sparkle.jpg" alt="">
+                <a href=""><i class="fas fa-play"></i></a>
+              </div>
+              <div>
+                <h5 class="heading-small">
+                  Sparkle
+                </h5>
+                <p class="light-text">
+                  Radwimps
+                </p>
+              </div>
+            </div>
+            <div class="right-content">
+              <i class="far fa-heart"></i>
+            </div>
+          </div>
+          <!-- seventh playlist item -->
+          <div class=playlist-item>
+            <div class="left-content">
+              <div class="light-text" style="margin-right:4px;">
+                07
+              </div>
+              <div class="overlay-play">
+                <img src="static\songs\yaosobi.jpg" alt="">
+                <a href=""><i class="fas fa-play"></i></a>
+              </div>
+              <div>
+                <h5 class="heading-small">
+                  Yoasobi
+                </h5>
+                <p class="light-text">
+                  Yoasobi
+                </p>
+              </div>
+            </div>
+            <div class="right-content">
+              <i class="far fa-heart"></i>
+            </div>
+          </div>
+          <!-- eighth playlist item -->
+          <div class=playlist-item>
+            <div class="left-content">
+              <div class="light-text" style="margin-right:4px;">
+                08
+              </div>
+              <div class="overlay-play">
+                <img src="static\songs\channd-baaliyan.jpg" alt="">
+                <a href=""><i class="fas fa-play"></i></a>
+              </div>
+              <div>
+                <h5 class="heading-small">
+                  Chaand Baaliyan
+                </h5>
+                <p class="light-text">
+                  Ankit
+                </p>
+              </div>
+            </div>
+            <div class="right-content">
+              <i class="far fa-heart"></i>
+            </div>
+          </div>
+          <!-- ninth playlist item -->
+          <div class=playlist-item>
+            <div class="left-content">
+              <div class="light-text" style="margin-right:4px;">
+                09
+              </div>
+              <div class="overlay-play">
+                <img src="static\songs\de-tali.jpg" alt="">
+                <a href=""><i class="fas fa-play"></i></a>
+              </div>
+              <div>
+                <h5 class="heading-small">
+                  De Tali
+                </h5>
+                <p class="light-text">
+                  Arijit
+                </p>
+              </div>
+            </div>
+            <div class="right-content">
+              <i class="far fa-heart"></i>
+            </div>
+          </div>
+          <!-- tenth playlist item -->
+          <div class=playlist-item>
+            <div class="left-content">
+              <div class="light-text" style="margin-right:4px;">
+                10
+              </div>
+              <div class="overlay-play">
+                <img src="static\songs\main-ki-karaan.jpg" alt="">
+                <a href=""><i class="fas fa-play"></i></a>
+              </div>
+              <div>
+                <h5 class="heading-small">
+                  Main Ki Karaan
+                </h5>
+                <p class="light-text">
+                  B Praak
+                </p>
+              </div>
+            </div>
+            <div class="right-content">
+              <i class="far fa-heart"></i>
+            </div>
+          </div>
+          <!-- eleventh playlist item -->
+          <div class=playlist-item>
+            <div class="left-content">
+              <div class="light-text" style="margin-right:4px;">
+                11
+              </div>
+              <div class="overlay-play">
+                <img src="static\songs\meri-jaan.jpg" alt="">
+                <a href=""><i class="fas fa-play"></i></a>
+              </div>
+              <div>
+                <h5 class="heading-small">
+                  Meri Jaan
+                </h5>
+                <p class="light-text">
+                  Arijit
+                </p>
+              </div>
+            </div>
+            <div class="right-content">
+              <i class="far fa-heart"></i>
+            </div>
+          </div>
+          <!-- twelfth playlist item -->
+          <div class=playlist-item>
+            <div class="left-content">
+              <div class="light-text" style="margin-right:4px;">
+                12
+              </div>
+              <div class="overlay-play">
+                <img src="static\songs\srivalli.jpg" alt="">
+                <a href=""><i class="fas fa-play"></i></a>
+              </div>
+              <div>
+                <h5 class="heading-small">
+                  Srivalli
+                </h5>
+                <p class="light-text">
+                  Pushpa
+                </p>
+              </div>
+            </div>
+            <div class="right-content">
+              <i class="far fa-heart"></i>
+            </div>
+          </div>
+        </div>
+      </aside>
+    </section>
+
+    <!-- bottom player -->
+    <section id="bottom-player">
+      <div class="bottom-player-outer d-flex-row flex-jc-sb">
+
+        <div class="bottom-now-playing d-flex-row flex-ai-center">
+
+          <img src="static\songs\dreamland.jpg" alt="">
+          <div class="bottom-playing-desc">
+            <div>Dreamland</div>
+            <div class="light-text">Glass Animals</div>
+          </div>
+          <div class="like-no-icon">
+            <span><i class="far fa-heart"></i></span>
+            <span><i class="fas fa-ban"></i></span>
+          </div>
+
+        </div>
+        <div class="bottom-play-progress d-flex-col flex-ai-center">
+          <div class="bottom-music-controls d-flex-row flex-jc-sa flex-ai-center">
+            <a href=""><i class="fas fa-random"></i></a>
+            <a href=""><i class="fas fa-step-backward"></i></a>
+            <div class="bottom-pause-button">
+              <a href=""><i class="fas fa-pause"></i></a>
+            </div>
+            <a href=""><i class="fas fa-step-forward"></i></a>
+            <a href=""><i class="fas fa-redo"></i></a>
+          </div>
+          <div class="progress-bar-status d-flex-row flex-jc-se flex-ai-center">
+            <span class="light-text">1:22</span>
+            <div class="progress-bar-container">
+              <input type="range" min="1" max="100" value="20" class="progress-bar" id="myProg">
+            </div>
+            <span class="light-text">4:32</span>
+          </div>
+        </div>
+        <div class="bottom-music-options d-flex-row flex-ai-center flex-jc-sb">
+          <a href=""><i class="fas fa-desktop"></i></a>
+          <a href=""><i class="fas fa-list-ul"></i></a>
+          <a href=""><i class="fas fa-volume-up"></i></a>
+          <div class="volume-slider-container">
+            <input type="range" min="1" max="100" value="50" class="volume-slider" id="myVol">
+          </div>
+          <a href=""><i class="fas fa-arrows-alt"></i></a>
+        </div>
+
+      </div>
+    </section>
+  </main>
+</body>
+
+</html>
